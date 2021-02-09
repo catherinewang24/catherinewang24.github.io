@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags for Bootstrap responsive design-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap v4.6 CSS via CDN - no local bootstrap files)-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+        <!-- Local css file (overriding the existing bootstrap styles of my choosing)-->
+        <link rel="stylesheet" href="resources/css/style.css">
+
+        <title>ADF Demo</title>
+    </head>
+
+
+    <body>
+
+        <!--Sticky Navigation bar w/ responsive collapse toggler-->
+        <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+            <div class="container"> <!--Container added so there is padding on both sides, so that items and logo don't go directly to end of page.-->
+                <a class="navbar-brand" href="#">
+                    <img class="nav-logo" src="resources/images/logo/adf-logo-placeholder.png" alt="ADF Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-secondary" href="#" role="button">Get Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Open Dashboard ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--Full-width welcome header page aka "jumbotron"-->
+        <div class="jumbotron jumbotron-fluid jumbotron-image">
+            <div class="container small-container my-auto">
+                <h1 class="display-4">The worry-free coin</h1>
+                <p class="subheadline">Put your mind at ease with ADF.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Tell me more</a>
+            </div>
+        </div>
+
+
+        <!--Grid for "concepts" section of website-->
+        <section class="container concepts small-container">
+
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-8 my-auto shrink-padding ">
+                    <h3>Make use of your assets</h3>
+                    <p>
+                        Convert your assets through our minting portal and
+                        recieve ADF stable digital currency equivalent. 
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="resources/images/concept/concept-icons1-01.png" class="img-fluid" alt="Gold to ADF portal">
+                </div>
+            </div>
+            
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-8 my-auto shrink-padding">
+                    <h3>A stable coin with no volatility</h3>
+                    <p>
+                        Smart contracts update ADF with real-world market
+                        prices of assets through Chainlink Price Feeds.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="resources/images/concept/concept-icons1-02.png" class="img-fluid" alt="One ADF equals one USD">
+                </div>
+            </div>
+
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-8 my-auto shrink-padding">
+                    <h3>Easily exchange your ADF</h3>
+                    <p>
+                        ADFs are ERC-20 Fungible Tokens, which allow you
+                        to exchange with other ERC-20-compatible tokens.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="resources/images/concept/concept-icons1-03.png" class="img-fluid" alt="ADF can be exchanged with other coins">
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--Grid for "Collateral" section of website-->
+        <section class="container collateral small-container">
+
+            <div>
+                <h2>Types of Collateral</h2>
+                <p>We accept a variety of collateral types through our ADF portal</p>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6">
+                    <img src="resources/images/collateral/collateral-icons1-01.png" class="img-fluid" alt="Gold bars">
+                    <p>Gold Certificates</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="resources/images/collateral/collateral-icons1-02.png" class="img-fluid" alt="US Dollar bills">
+                    <p>US Dollars</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="resources/images/collateral/collateral-icons1-03.png" class="img-fluid" alt="Government central bank">
+                    <p>Bonds</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="resources/images/collateral/collateral-icons1-04.png" class="img-fluid" alt="House">
+                    <p>Real Estate</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--"Get Started" section of website-->
+        <section class="container-fluid get-started text-center">
+            <div class="container small-container">
+                <h2>Getting started only takes a few seconds</h2>
+                <p>Discover all the possibilities with the ADF stablecoin — your wallet will thank us later.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+            </div>
+        </section>
+
+
+        <!--Footer section of website-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Copyright © 2021 AIForceOne Inc.</p>
+                    </div>
+                    <div class="col-6 d-flex flex-row-reverse">
+                        <ul>
+                            <li class="d-inline pr-4">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="d-inline">
+                                <a href="#">Concept</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- jQuery and Bootstrap Bundle via CDN (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+<!-- 
+    Shortcuts
+    Simply type the name of the element (tag) you want, and then hit "tab"
+-->

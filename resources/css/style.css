@@ -1,0 +1,153 @@
+/* { border: 1px solid black; } */
+
+/* ----------------------------*/
+/* ---------Navigation---------*/
+/* ----------------------------*/
+
+.navbar {
+    background-color: aquamarine;
+}
+
+.navbar-nav > li{                          /* To add more white space on the left and right of the links in the navbar*/
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+.navbar-toggler {                          /* To turn off the navbar-toggler border (hamburger icon on smartphones) */
+    border: none;
+    outline: none;
+  }
+
+  .nav-logo {
+    max-height: 20px;
+    padding: 0;
+  }
+/* ----------------------------*/
+/* ---------Jumbotron----------*/
+/* ----------------------------*/
+
+.jumbotron {
+    background-image: url(../images/background/hero-background-1.png);       /* To add a background image into the jumbotron */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 21%;
+    padding-bottom: 21%;
+}
+
+.subheadline {                             /* To change font size of the subheadline */
+    font-size: 21px;
+}
+
+/* ----------------------------*/
+/* ---------Concepts-----------*/
+/* ----------------------------*/
+
+.shrink-padding {                         /* To reduce the width of the text on the right side in the concepts section*/
+    padding-right: 20%;
+}
+
+
+/* ----------------------------*/
+/* ----------Buttons-----------*/
+/* ----------------------------*/
+
+/* ----------Primary Button-----------*/
+
+.btn-primary {
+    border-radius: 23px;                    /* to form a "pill" shape from btn-primary */
+    background-color: #c4d1e2;
+    border-color: #c4d1e2;
+    color: #333333;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    border-color: #adbfd7;
+    background-color: #adbfd7;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-primary:active:hover {
+    border-color: #96adcc;
+    background-color: #96adcc;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ----------Secondary Button-----------*/
+
+.btn-secondary {
+    border-radius: 23px;                    /* to form a "pill" shape from btn-secondary */
+    background-color: #ffd666;
+    border-color: #ffd666;
+    color: #333333;
+    min-width: 100px;
+}
+
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
+    border-color: #ffce44;
+    background-color: #ffce44;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-secondary:active:hover {
+    border-color: #ffc522;
+    background-color: #ffc522;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+
+/* ----------------------------*/
+/* ---------Containers---------*/
+/* ----------------------------*/
+
+.small-container {                         /* To create a smaller width than the original "container" from bootstrap */
+    max-width: 900px
+}
+
+
+/* ----------------------------*/
+/* -----------Footer-----------*/
+/* ----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container {
+    max-width: 900px;
+
+}*/
+
+
+.concepts {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.collateral {
+    margin-bottom: 100px;
+}
+
+
+.get-started {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #f1f4f8;
+}
