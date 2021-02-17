@@ -1,33 +1,75 @@
 /* { border: 1px solid black; } */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* For smooth scroll*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------*/
+/* -----------Fonts------------*/
+/* ----------------------------*/
+p {
+    font-size: 18px;                    /* To make the <p> tags have larger font size */
+    color: #53546a;
+}
+
+.display-4 {                            
+    font-weight: 500;                   /* To make the Jumbotron Display font a little thicker than the default (overriding bootstraps css) */
+    font-size: 3.0rem;                  /* To make font size a little smaller than default. Default was originally 3.5rem (overriding bootstraps css) */
+}
+
+
+h1, h2, h3 {
+    margin-bottom: 1rem;                   /* To add more margin to the bottom of the <h> tags (bootstrap default is 0.5rem)*/
+    color: #333333;
+}
+
+footer p {
+    font-weight: 500;
+    color: #333333;
+}
+
 /* ----------------------------*/
 /* ---------Navigation---------*/
 /* ----------------------------*/
+.navbar-light .navbar-nav .nav-link {                   /* Overiding Bootstrap to change the color font of the navbar links for .navbar-light class*/
+    color: #333333;
+}
 
-.navbar {
-    background-color: aquamarine;
+.navbar {                                               /* To change navbar colour and make it a little transparent*/
+    background-color: rgba(255, 255, 255, 0.801);
 }
 
 .navbar-nav > li{                          /* To add more white space on the left and right of the links in the navbar*/
     padding-left:15px;
     padding-right:15px;
-  }
+}
+  
 
 .navbar-toggler {                          /* To turn off the navbar-toggler border (hamburger icon on smartphones) */
     border: none;
     outline: none;
-  }
+}
 
-  .nav-logo {
+.nav-logo {                               /* To change the size of the logo*/
     max-height: 20px;
     padding: 0;
-  }
+}
+
+ion-icon {
+    vertical-align: middle;
+}
 /* ----------------------------*/
 /* ---------Jumbotron----------*/
 /* ----------------------------*/
 
 .jumbotron {
-    background-image: url(../images/background/hero-background-1.png);       /* To add a background image into the jumbotron */
+    background-image: url(../images/background/hero-background-2.png);       /* To add a background image into the jumbotron */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,9 +85,60 @@
 /* ---------Concepts-----------*/
 /* ----------------------------*/
 
-.shrink-padding {                         /* To reduce the width of the text on the right side in the concepts section*/
-    padding-right: 20%;
+.column-padding {                                    /* To add white space on top and bottom in-between each concept*/
+    margin-bottom: 60px;
 }
+
+
+.concepts .fixed-width {                            /* To make the images in "Concepts" section not responsive and fixed width instead, so when you shrink the browser, the image doesn't scale up*/
+    height: auto;
+    max-width: 270px;
+}
+
+.concepts {                              /* To add white space on top and bottom of entire Concepts section div*/
+    margin-top: 30px;
+    margin-bottom: 110px;
+}
+
+
+/* ----------------------------*/
+/* ---------Collateral---------*/
+/* ----------------------------*/
+
+
+.collateral .fixed-width {                         /* To make the images in "Collateral" section not responsive and fixed width instead, so when you shrink the browser, the image doesn't scale up*/
+    height: auto;
+    max-width: 190px;
+}
+
+.collateral {                              /* To add white space on top and bottom of entire Collateral section div*/
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+/* ----------------------------*/
+/* --------Get Started---------*/
+/* ----------------------------*/
+
+.get-started {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    background-color: #f1f4f8;
+}
+
+
+
+/* ----------------------------*/
+/* -----------Footer-----------*/
+/* ----------------------------*/
+
+.footer-padding {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
 
 
 /* ----------------------------*/
@@ -56,23 +149,24 @@
 
 .btn-primary {
     border-radius: 23px;                    /* to form a "pill" shape from btn-primary */
-    background-color: #c4d1e2;
-    border-color: #c4d1e2;
+    background-color: #b3c4d8;
+    border-color: #b3c4d8;
     color: #333333;
+    margin-top: 10px;                       /* to add a margin on top of button*/
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-    border-color: #adbfd7;
-    background-color: #adbfd7;
+    border-color: #9db3cc;
+    background-color: #9db3cc;
     color: #333333;
     outline: none;
     box-shadow: none;
 }
 
 .btn.btn-primary:active:hover {
-    border-color: #96adcc;
-    background-color: #96adcc;
+    border-color: #86a1c1;
+    background-color: #86a1c1;
     color: #333333;
     outline: none;
     box-shadow: none;
@@ -81,73 +175,120 @@
 
 /* ----------Secondary Button-----------*/
 
+.get-started .btn-secondary {
+    margin-top: 10px;    
+}
+
 .btn-secondary {
-    border-radius: 23px;                    /* to form a "pill" shape from btn-secondary */
-    background-color: #ffd666;
-    border-color: #ffd666;
+    border-radius: 23px;                    /* to form a "pill" shape from btn-secondary, changed colors down in increments of 2 */
+    background-color: #ffd255;
+    border-color: #ffd255;
     color: #333333;
     min-width: 100px;
 }
 
 .btn.btn-secondary:hover,
 .btn.btn-secondary:focus {
-    border-color: #ffce44;
-    background-color: #ffce44;
+    border-color: #ffc933;
+    background-color: #ffc933;
     color: #333333;
     outline: none;
     box-shadow: none;
 }
 
 .btn.btn-secondary:active:hover {
-    border-color: #ffc522;
-    background-color: #ffc522;
+    border-color: #ffc011;
+    background-color: #ffc011;
     color: #333333;
     outline: none;
     box-shadow: none;
 }
 
-/* ----------------------------*/
-/* ---------Containers---------*/
-/* ----------------------------*/
+/* ----------Light Button-----------*/
 
-.small-container {                         /* To create a smaller width than the original "container" from bootstrap */
-    max-width: 900px
+.btn-light {
+    border-radius: 23px;                    /* to form a "pill" shape from btn-secondary, changed colors down in increments of 2 */
+    background-color: #fff;
+    border-color: #fff;
+    color: #333333;
+    min-width: 100px;
+}
+
+.btn.btn-light:hover,
+.btn.btn-light:focus {
+    border-color: #f2f5f8;
+    background-color: #f2f5f8;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-light:active:hover {
+    border-color: #f2f5f8;
+    background-color: #f2f5f8;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
 }
 
 
+
+
 /* ----------------------------*/
-/* -----------Footer-----------*/
+/* -------Media Queries--------*/
 /* ----------------------------*/
 
+/* max-width: 768px = up to tablet screen size. I cut all the desktop px in half, eg: margin-bottom: 60px on desktop, margin-bottom: 30px on tablet and under*/
+@media (max-width: 767.98px) {
 
+    .column-padding {                    /* To make less white space between the concepts compared to the 60px on desktop*/
+        margin-bottom: 30px;
+    }
 
+    .collateral {                        /* To make less white space on top and bottom of entire Collateral section div for tablet size and under*/
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 
+    .get-started {                       /* To make less padding space on top and bottom of get started section div for tablet size and under*/
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
 
+    .footer-padding {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
 
-
-
-
-
-
-
-/*.container {
-    max-width: 900px;
-
-}*/
-
-
-.concepts {
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
-.collateral {
-    margin-bottom: 100px;
+/* min-width: 992px = desktops, 992px and up*/
+@media (min-width: 992px) {
+    
+    .collateral-margin {
+        margin-top: 20px;
+    }
+
+    .small-container {                      /* To create a smaller width than the original "container" from bootstrap only on desktop*/
+        max-width: 860px;
+    }
+
+    .concepts .small-container {
+        max-width: 700px;
+    }
+
+    .shrink-padding {                       /* To reduce the width of the text on the right side in the concepts section on desktop*/
+        padding-right: 15%;
+        }
+
 }
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {          
 
-.get-started {
-    padding-bottom: 100px;
-    padding-top: 100px;
-    background-color: #f1f4f8;
+    .collateral-margin {                    /* To add more margin on tablets for the collateral, thus the white space between the items is less*/
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
 }
