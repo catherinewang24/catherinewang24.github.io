@@ -57,7 +57,7 @@ footer p {
 }
 
 .nav-logo {                               /* To change the size of the logo*/
-    max-height: 20px;
+    max-height: 45px;
     padding: 0;
 }
 
@@ -149,24 +149,24 @@ ion-icon {
 
 .btn-primary {
     border-radius: 23px;                    /* to form a "pill" shape from btn-primary */
-    background-color: #b3c4d8;
-    border-color: #b3c4d8;
+    background-color: #ffd255;
+    border-color: #ffd255;
     color: #333333;
     margin-top: 10px;                       /* to add a margin on top of button*/
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-    border-color: #9db3cc;
-    background-color: #9db3cc;
+    border-color: #ffc933;
+    background-color: #ffc933;
     color: #333333;
     outline: none;
     box-shadow: none;
 }
 
 .btn.btn-primary:active:hover {
-    border-color: #86a1c1;
-    background-color: #86a1c1;
+    border-color: #ffc011;
+    background-color: #ffc011;
     color: #333333;
     outline: none;
     box-shadow: none;
@@ -181,24 +181,24 @@ ion-icon {
 
 .btn-secondary {
     border-radius: 23px;                    /* to form a "pill" shape from btn-secondary, changed colors down in increments of 2 */
-    background-color: #ffd255;
-    border-color: #ffd255;
+    background-color: #b3c4d8;
+    border-color: #b3c4d8;
     color: #333333;
     min-width: 100px;
 }
 
 .btn.btn-secondary:hover,
 .btn.btn-secondary:focus {
-    border-color: #ffc933;
-    background-color: #ffc933;
+    border-color: #9db3cc;
+    background-color: #9db3cc;
     color: #333333;
     outline: none;
     box-shadow: none;
 }
 
 .btn.btn-secondary:active:hover {
-    border-color: #ffc011;
-    background-color: #ffc011;
+    border-color: #86a1c1;
+    background-color: #86a1c1;
     color: #333333;
     outline: none;
     box-shadow: none;
@@ -232,8 +232,6 @@ ion-icon {
 }
 
 
-
-
 /* ----------------------------*/
 /* -------Media Queries--------*/
 /* ----------------------------*/
@@ -258,6 +256,10 @@ ion-icon {
     .footer-padding {
         padding-top: 25px;
         padding-bottom: 15px;
+    }
+
+    .subheadline {
+        padding-right: 100px;
     }
 
 }
